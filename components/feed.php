@@ -1,3 +1,7 @@
+<?php
+    include 'dbh.inc.php';
+?>
+
 <div class="container">
     <div class="col-md-7">
         <div class="box">
@@ -9,16 +13,29 @@
             </div>
         </div>
 
-        <div class="box">
-            <div class="account">
-                <i class="fas fa-user-circle fa-2x"></i>
-                <span>unknown</span>
-            </div>
-            <div class="box-title ml-10-custom">
-                <h4>Title</h4>
-            </div>
-            <div class="box-body ml-10-custom">
-                <h4>Text</h4>
+<?php
+
+$sql = "SELECT * FROM posts;";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+
+if ($resultCheck > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        ?>
+            <div class="box">
+                <div class="account">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                    <span>unknown</span>
+                </div>
+                <div class="box-title ml-10-custom">
+                    <h4><?php echo $row['posttitle'] ?></h4>
+                </div>
+                <div class="box-body ml-10-custom">
+                    <h4><?php echo $row['posttext'] ?></h4>
+                </div>
             </div>
         </div>
-    </div>
+        <?php
+    }
+}
+?>
