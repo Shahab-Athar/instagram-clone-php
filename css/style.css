@@ -1,0 +1,86 @@
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
+a:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* Navbar Styling */
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid lightgray;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.right li {
+    display: inline;
+    list-style: none;
+}
+
+.right a {
+    margin-right: 30px;
+}
+
+.left h1 {
+    font-family: Accent Nelson Balaban;
+    font-style: italic;
+}
+
+/* Feed Styling */
+
+.box {
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    width: 600px;
+}
+
+.box-title h4 {
+    margin-top: 20px;
+}
+
+.box-body p {
+    margin-bottom: 20px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.account span {
+    padding-left: 10px;
+}
+
+.ml-10-custom {
+    margin-left: 10px;
+}
