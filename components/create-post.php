@@ -1,6 +1,6 @@
-<div class="col-md-5">
+<div class="post-form">
     <br>
-    <form method="POST">
+    <form action="components/post-create.php" method="POST">
         <h4>Title:</h4>
         <input type="text" class="form-control" name="title">
         <br>

@@ -13,10 +13,11 @@ a:hover {
 nav {
     position: sticky;
     top: 0px;
-    background-color: white;
+    background: white;
 }
 
 .wrapper {
+    background: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -24,11 +25,13 @@ nav {
 }
 
 .right {
+    background: white;
     display: flex;
     align-items: center;
 }
 
 .left {
+    background: white;
     display: flex;
     align-items: center;
 }
@@ -83,4 +86,14 @@ nav {
 
 .ml-10-custom {
     margin-left: 10px;
+}
+
+/* Create-post styling */
+
+.post-form {
+    float: right;
+}
+
+.post-form input {
+    width: 400px;
 }

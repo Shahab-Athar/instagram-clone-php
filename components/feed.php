@@ -28,14 +28,14 @@ if ($resultCheck > 0) {
                     <span>unknown</span>
                 </div>
                 <div class="box-title ml-10-custom">
-                    <h4><?php echo $row['posttitle'] ?></h4>
+                    <h4><b><?php echo $row['posttitle'] ?></b></h4>
                 </div>
                 <div class="box-body ml-10-custom">
                     <h4><?php echo $row['posttext'] ?></h4>
                 </div>
             </div>
-        </div>
         <?php
     }
 }
 ?>
+</div>

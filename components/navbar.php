@@ -1,7 +1,7 @@
 <nav>
     <div class="wrapper">
         <div class="left">
-            <h1>Instagram</h1>
+            <a href="index.php"><h1>Instagram</h1></a>
         </div>
         <div class="center">
             <form method="get">
